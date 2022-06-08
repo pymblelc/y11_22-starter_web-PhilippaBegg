@@ -1,0 +1,24 @@
+body {
+	background-color: lightyellow;
+}
+
+.Buttons {
+	background-color: white;
+    padding: 7px;
+	color: black;
+	text-decoration: none;
+	border-width: 2px;
+	border-style:solid;
+	border-color: black;
+	border-radius: 5px;
+	width: 182px;
+	height: 50px;
+	font-size: 20px;
+	font-family: Times 'Times New Roman', Times, serif;
+}
+
+
+.Buttons:hover{
+	background-color: lightgray;
+}
+

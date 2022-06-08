@@ -1,0 +1,41 @@
+body {
+	background-color: lightyellow;
+}
+
+.flex-container {
+    margin-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+#friends:hover{
+	opacity: 50%;
+}
+
+#friends {
+	border: 1px solid rgb(0, 0, 0);
+	border-radius: 10px;
+	padding: 2px;
+	width: 104px;
+}
+
+.buttons {
+	background-color: white;
+    padding: 7px;
+	color: black;
+	text-decoration: none;
+	border-width: 2px;
+	border-style:solid;
+	border-color: black;
+	border-radius: 5px;
+	width: 182px;
+	height: 50px;
+	font-size: 20px;
+	font-family: Times 'Times New Roman', Times, serif;
+}
+
+
+.buttons:hover{
+	background-color: lightgray;
+}
