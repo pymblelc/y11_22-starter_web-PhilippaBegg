@@ -1,0 +1,45 @@
+body {
+    background-color: beige;
+}
+
+img{
+    width: 350px;
+    height: 350px;
+    margin-top: 15px;
+}
+#previousbtn{
+    margin-top: 10px;
+    margin-left: 130px;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+}
+#nextbtn{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+}
+
+#Buttons {
+    color: black;
+    background-color: white;
+    border-width: 2px;
+	border-style:solid;
+	border-color: black;
+	border-radius: 6px;
+    text-decoration: none;
+    padding: 2px;
+}
+
+#Buttons:hover{
+	background-color: lightgray;
+}
+
+h1 {
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+}
