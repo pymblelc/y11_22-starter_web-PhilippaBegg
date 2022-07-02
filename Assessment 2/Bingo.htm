@@ -6,8 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bingo</title>
     <link rel="stylesheet" href="Bingo.css"/>
+    <script src="Bingo.js" defer></script>
 </head>
 <body>
-    <a class="Buttons" href="Home.htm">Home</a>
+<h1>Bingo</h1>
+
+<a class="Buttons" href="Home.htm">Home</a>
+
+<div>
+    <img src="Photos assessment/Screen Shot 2022-07-02 at 8.46.06 pm.png" id="mainImage">
+</div>
+
+<div class="Container">
+    <img src="Photos assessment/Screen Shot 2022-07-02 at 8.46.16 pm.png" id="otherImage">
+    <img src="Photos assessment/Screen Shot 2022-07-02 at 8.46.29 pm.png" id="otherImage">
+    <img src="Photos assessment/Screen Shot 2022-07-02 at 8.46.38 pm.png" id="otherImage">
+</div>
+    
+    <form name="BingoNumberGenerator">
+        <input type="text" id="textbox" name="textbox" />
+        <input type="button" value="Generate number!" onclick="RandomNumber();" />
+    </form>
+
 </body>
 </html>

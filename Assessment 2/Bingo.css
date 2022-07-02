@@ -1,0 +1,31 @@
+h1 {
+    text-decoration: underline;
+    text-align: center;
+    
+}
+
+#mainImage {
+    width: 310px;
+    margin-top: 10px;
+}
+
+#otherImage {
+    width: 100px;
+}
+
+.Buttons {
+    color: black;
+    background-color: white;
+    border-width: 2px;
+	border-style:solid;
+	border-color: black;
+	border-radius: 6px;
+    text-decoration: none;
+    padding: 2px;
+}
+
+.Buttons:hover{
+	background-color: lightgray;
+}
+
+
