@@ -1,3 +1,17 @@
+document.getElementById("btnAnalyse").addEventListener( // <button id="submit">Submit</button>
+    "click",
+    function () {
+        let fileInput = document.getElementById("myPhoto"); // <input type="file" id="upload">
+        let blob = new Blob([fileInput.files[0]]);
+        ImageAPI.analyseFacesBlob(
+            blob,
+            function (data) {
+                console.log(data);
+            }
+        );
+    }
+);
+
 var faces = []; //undefined
 let myImage = document.getElementById("myPhoto");
 let myButton = document.getElementById("btnAnalyse");

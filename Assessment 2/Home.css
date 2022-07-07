@@ -1,3 +1,29 @@
 body {
     background-color: beige;
 }
+
+p {
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+.Buttons {
+    color: black;
+    background-color: white;
+    border-width: 2px;
+	border-style:solid;
+	border-color: black;
+	border-radius: 6px;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.Buttons:hover {
+    background-color: lightgrey;
+}
