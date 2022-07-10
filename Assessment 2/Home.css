@@ -21,9 +21,28 @@ h1 {
 	border-radius: 6px;
     text-decoration: none;
     padding: 10px;
-    font-size: 20px;
+    font-size: 30px;
+    margin: 2px;
+    width: 27%;
 }
 
 .Buttons:hover {
     background-color: lightgrey;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#bingoImage {
+    height: 100px;
+}
+
+#musicImage {
+    height: 100px;
+}
+
+#eventsImage {
+    height: 100px;
 }
