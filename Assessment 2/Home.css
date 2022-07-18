@@ -21,7 +21,7 @@ h1 {
 	border-radius: 6px;
     text-decoration: none;
     padding: 10px;
-    font-size: 30px;
+    font-size: 150%;
     margin: 2px;
     width: 27%;
 }
@@ -35,14 +35,16 @@ h1 {
     flex-wrap: wrap;
 }
 
+/* width as a percentage so that the images display according to the size of the users screen. */
+
 #bingoImage {
-    height: 100px;
+    width: 100%;
 }
 
 #musicImage {
-    height: 100px;
+    width: 100%;
 }
 
 #eventsImage {
-    height: 100px;
+    width: 100%;
 }

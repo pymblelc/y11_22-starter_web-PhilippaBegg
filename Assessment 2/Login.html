@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
 <head>
     <meta charset="UTF-8">
@@ -19,4 +19,33 @@
     <p id="myText">
     </p>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+    <script src="Login.js" defer></script>
+    <link rel="stylesheet" href="Login.css"/>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <p>To login, please click the 'Take Photo' button so your age may be determined.</p>
+    
+    <div>
+    <video id="webcam" autoplay playsinline width="640" height="480"></video>
+    <canvas id="canvas" class="d-none"></canvas>
+    <audio id="snapSound" src="audio/snap.wav" preload = "auto"></audio>
+
+    <input class="buttons" type="button" value="Take Photo" id="btnTakePhoto">
+    <input class="buttons" type="button" value="Clear Photo" id="btnClearPhoto">
+    </div>
+
+</body>
 </html>
+

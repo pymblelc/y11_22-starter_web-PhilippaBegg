@@ -9,6 +9,7 @@ img{
 }
 #previousbtn{
     margin-top: 10px;
+     /* to align it in the centre. */
     margin-left: 130px;
     width: 50px;
     height: 30px;
@@ -16,7 +17,8 @@ img{
 }
 #nextbtn{
     margin-top: 10px;
-    margin-left: 10px;
+    /* to align it in the centre. */
+    margin-left: 10px; 
     width: 50px;
     height: 30px;
     font-size: 20px;
