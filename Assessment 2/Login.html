@@ -29,6 +29,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+    <script src="FaceRecognitionCode.js" defer></script>
     <script src="Login.js" defer></script>
     <link rel="stylesheet" href="Login.css"/>
 </head>
@@ -40,7 +41,6 @@
     <div>
     <video id="webcam" autoplay playsinline width="640" height="480"></video>
     <canvas id="canvas" class="d-none"></canvas>
-    <audio id="snapSound" src="audio/snap.wav" preload = "auto"></audio>
 
     <input class="buttons" type="button" value="Take Photo" id="btnTakePhoto">
     <input class="buttons" type="button" value="Clear Photo" id="btnClearPhoto">

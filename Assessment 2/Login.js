@@ -35,7 +35,7 @@
 //         });
 //       }
 //     });
-//   } 
+//   }
 // }
 // // As soon as this page is loaded, find the ages for all the faces
 // $(document).ready(function () {
@@ -71,38 +71,46 @@
 //   results.innerHTML = cleared;
 // });
 
-const webcamElement = document.getElementById('webcam');
-const canvasElement = document.getElementById('canvas');
-var ctx = canvasElement.getContext('2d');
-const snapSoundElement = document.getElementById('snapSound');
-const webcam = new Webcam(webcamElement, 'user', canvasElement, snapSoundElement);
-const ButtonTakePhoto = document.getElementById('btnTakePhoto')
-const ButtonClearPhoto = document.getElementById('btnClearPhoto')
+const webcamElement = document.getElementById("webcam");
+const canvasElement = document.getElementById("canvas");
+var ctx = canvasElement.getContext("2d");
+const webcam = new Webcam(webcamElement, "user", canvasElement);
+const ButtonTakePhoto = document.getElementById("btnTakePhoto");
+const ButtonClearPhoto = document.getElementById("btnClearPhoto");
 
-webcam.start()
-   .then(result =>{
-      console.log("webcam started");
-   })
-   .catch(err => {
-       console.log(err);
-   });
+webcam
+  .start()
+  .then((result) => {
+    console.log("webcam started");
+  })
+  .catch(err => {
+    console.log(err);
+  });
 
-   var picture = webcam.snap();
+var picture = webcam.snap();
 
-   webcam.stop();
+webcam.stop();
 
-   //take photo
+//take photo: to get onto the app, hold up a photo of a older person in front of the camera.
 
-ButtonTakePhoto.addEventListener('click',function (){
-  
-  
-  let picture = webcam.snap();
-  console.log(picture);
+ButtonTakePhoto.addEventListener("click", function () {
+  webcam.snap();
+  canvasElement.toBlob(function (blob) {
+    ImageAPI.analyseFacesBlob(blob, function (data) {
+      console.log(data);
+      // Loop through this for every face identified in the image
+      for (let i = 0; i < data.length; i++) {
+        let faces[i].age = data[i].faceAttributes.age;
+        if (faces[i].age > 50) {
+          window.location = "Home.htm";
+        } else {
+          window.alert("You are not old enough ton access this app!");
+        }
+      }
+    });
+  });
 });
 
-ButtonClearPhoto.addEventListener('click',function (){
-  ctx.clearRect(0, 0, canvas.width, canvas.height)
+ButtonClearPhoto.addEventListener("click", function () {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
 });
-
-
-   
