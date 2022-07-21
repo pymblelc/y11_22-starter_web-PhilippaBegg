@@ -13,20 +13,23 @@
 
 <a class="Buttons" href="Home.htm">Home</a>
 
+<p>Welcome to Bingo! Click the 'Generate number!' button to begin your game! You are able to view you opponents progress at the bottom!</p>
+
 <div>
     <img src="Photos assessment/Screen Shot 2022-07-02 at 8.46.06 pm.png" id="mainImage">
-</div>
+</div>   
+
+    <form name="BingoNumberGenerator">
+        <input type="text" id="textbox" name="textbox" />
+        <input type="button" value="Generate number!" onclick="RandomNumber();" />
+    </form>
 
 <div class="Container">
     <img src="Photos assessment/Screen Shot 2022-07-02 at 8.46.16 pm.png" id="otherImage">
     <img src="Photos assessment/Screen Shot 2022-07-02 at 8.46.29 pm.png" id="otherImage">
     <img src="Photos assessment/Screen Shot 2022-07-02 at 8.46.38 pm.png" id="otherImage">
 </div>
-    
-    <form name="BingoNumberGenerator">
-        <input type="text" id="textbox" name="textbox" />
-        <input type="button" value="Generate number!" onclick="RandomNumber();" />
-    </form>
+
 
 </body>
 </html>
