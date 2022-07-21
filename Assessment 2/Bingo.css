@@ -5,7 +5,7 @@ h1 {
 }
 
 body {
-    background-color: beige;
+    background-color: rgb(217, 246, 255);
 }
 
 #mainImage {
@@ -16,12 +16,15 @@ body {
     margin-right: auto;
 }
 
-#otherImage {
+.Container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.otherImage {
     width: 15%;
-    display:inline-block;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .Buttons {
@@ -41,10 +44,20 @@ body {
 
 form {
     size: 50px;
-    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+#numberbutton {
+    width: 200px;
+    height: 40px;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+#textbox {
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
 }
 
 p {

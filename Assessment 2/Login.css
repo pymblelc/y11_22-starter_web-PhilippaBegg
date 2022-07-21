@@ -12,6 +12,10 @@
     font-size: 20px;
 }
 
+body {
+    background-color: rgb(217, 246, 255);
+}
+
 div {
     margin-top: 30px;
 }
