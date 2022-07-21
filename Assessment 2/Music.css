@@ -5,7 +5,8 @@ body {
 img{
     width: 40%;
     margin-top: 15px;
-    display: block;
+    /* so that the image can be centered */
+    display: block; 
     margin-left: auto;
     margin-right: auto;
 }
