@@ -21,7 +21,7 @@ var picture = webcam.snap();
 //turn off the camera
 webcam.stop();
 
-//take photo: to get onto the app, hold up a photo of a older person in front of the camera.
+//take photo: to get onto the app, hold up a photo of a person over 50 in front of the camera.
 
 ButtonTakePhoto.addEventListener("click", function () {
   webcam.snap();
