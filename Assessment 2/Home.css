@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(217, 246, 255);
+    ;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+h1 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.Buttons {
+    color: black;
+    background-color: white;
+    border-width: 2px;
+	border-style:solid;
+	border-color: black;
+	border-radius: 6px;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 60px;
+    margin: 2px;
+    width: 30%;
+}
+
+.Buttons:hover {
+    background-color: lightgrey;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* width as a percentage so that the images display according to the size of the users screen. */
+
+#bingoImage {
+    width: 100%;
+}
+
+#musicImage {
+    width: 100%;
+}
+
+#eventsImage {
+    width: 100%;
+}
