@@ -39,8 +39,8 @@ function previousImage(){
             if(i === imgArray.length){ //check if the length of i is equal to the length of the image.array
                 document.getElementById("displayedImage").src = imgArray[4].src;
                 break; //stops the loop
-            }
-            document.getElementById("displayedImage").src = imgArray[i-1].src; //if the previous image was number i=4, then the next image is number i=4-1, so number 3.
+            } //if the previous image was number i=4, then the next image is number i=4-1, so number 3.
+            document.getElementById("displayedImage").src = imgArray[i-1].src; 
             break; //stops the loop
         }
     }
